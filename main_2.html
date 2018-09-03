@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obus Records</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="functions.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <meta name="viewport" width="device-width" />
+
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+
+
+
+<div class="bgimg">
+
+
+
+<div class="wrapper">
+    <header class="header"></header>
+    <article class="main">
+        <div id="center">
+            <img id="logo" src="images/ObusLogo_PNG.png">
+            <p> Obus Records</p>
+            <p><font size="5"> Bitterling - Kleine Oneindigheid </font></p>
+            <!--<iframe width="420" height="315" frameborder="0"-->
+                    <!--src="https://www.youtube.com/embed/7cP01fcJUNk">-->
+            <!--</iframe>-->
+
+            <div class="container">
+            <a href="https://obusrecords.bandcamp.com/"><img id="album_cover" src="images/Bitterling_1.jpg"></a>
+                <div class="overlay">
+                </div>
+
+            </div>
+
+            <p> <i> Available 15 October 2018 </i> <p>
+            <p> </p>
+            <p> <a href="https://obusrecords.bandcamp.com/"> Pre-Order </a> </p>
+
+
+
+
+            <a href="https://www.facebook.com/Sluggart/">
+                <img class="icon" id="face"
+                     onmouseover="toggle_image('face', 'facebook_black.png', 'facebook_white.png')"
+                     onmouseout="toggle_image('face', 'facebook_black.png', 'facebook_white.png')"
+                     src="images/facebook_black.png"></a>&nbsp&nbsp&nbsp
+            <a href="https://www.facebook.com/Sluggart/">
+                <img class="icon" id="sound"
+                     onmouseover="toggle_image('sound', 'soundcloud_black.png', 'soundcloud_white.png')"
+                     onmouseout="toggle_image('sound', 'soundcloud_black.png', 'soundcloud_white.png')"
+                     src="images/soundcloud_black.png"></a> &nbsp&nbsp&nbsp
+            <a href="https://www.facebook.com/Sluggart/">
+                <img class="icon" id="youtube"
+                     onmouseover="toggle_image('youtube', 'youtube_black.png', 'youtube_white.png')"
+                     onmouseout="toggle_image('youtube', 'youtube_black.png', 'youtube_white.png')"
+                     src="images/youtube_black.png"></a>
+
+
+
+
+        </div>
+    </article>
+    <aside class="aside aside-1">
+<!--
+    <img id="logo" src="images/ObusLogo_PNG_white.png">
+-->
+    </aside>
+    <aside class="aside aside-2"></aside>
+    <footer class="footer">
+
+    </footer>
+
+
+</div>
+
+</div>
+
+<script>
+
+    function toggle_image(id, image_src1, image_src2) {
+
+        var image = document.getElementById(id);
+        var parts = image.src.split("/");
+        var image_src = parts[parts.length-1];
+        //console.log(image.src)
+        if (image_src=== image_src1){
+
+            image.src= "images/" + image_src2;
+        }
+        else if (image_src=== image_src2){
+
+            image.src= "images/" + image_src1;
+        }
+        else {
+            image.src = "images/" + image_src1;
+        }
+    }
+
+</script>
+
+</body>
+</html>
+

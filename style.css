@@ -1,0 +1,27 @@
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    margin: 0%;
+}
+.bgimg {
+    background-image: url("images/Bitterling_1.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+}
+
+#logo_small {
+    width: 5%;
+    height: 5%;
+}
+
+#page_2 {
+    height: 600px;
+}
+
+#text_1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
