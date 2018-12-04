@@ -73,9 +73,10 @@ a:hover {
 
 
 #album_cover {
-    /*width: 30%;*/
-    width: 450px;
+    width: 30%;
+    /*width: 450px; */
     height: auto;
+    max-width: 100%;
 }
 
 .icon {
